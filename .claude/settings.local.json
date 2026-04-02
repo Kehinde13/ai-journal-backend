@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find /c/Users/DELL/web/ai-journal-backend -maxdepth 3 -type f \\\\\\(-name *.js -o -name *.ts -o -name *.json -o -name README* -o -name .env* \\\\\\) ! -path */node_modules/*)"
+      "Bash(find /c/Users/DELL/web/ai-journal-backend -maxdepth 3 -type f \\\\\\(-name *.js -o -name *.ts -o -name *.json -o -name README* -o -name .env* \\\\\\) ! -path */node_modules/*)",
+      "Bash(npm install:*)",
+      "Bash(npm test:*)",
+      "Bash(node -e ':*)",
+      "Bash(node -e \"console.log\\(require.resolve\\('@supabase/supabase-js'\\)\\);\")"
     ]
   }
 }
